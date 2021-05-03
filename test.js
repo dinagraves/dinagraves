@@ -26,12 +26,12 @@ describe('profile-interests', () => {
     }
     assert.strictEqual(sum, 100);
   });
-  it("must only list Ben's interests", () => {
+  it("must only list Dina's interests", () => {
     const expected = [
-      'Rock climbing 🧗',
+      'Powerlifting 🏋️',
       'Coding 🤓',
-      'Dinner with friends 🍕',
-      'Making fancy drinks 🍹'
+      'Cooking and eating delicious foods 🍩',
+      'Piano 🎹'
     ];
     const data = chartData();
     assert.deepStrictEqual(data.labels, expected);
